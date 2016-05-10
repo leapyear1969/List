@@ -1,0 +1,21 @@
+public class HashSetDemo{
+  public static void main(String[] args){
+    //create collection
+    HashSet<String> hs = new HashSet<String>();
+    
+    //add elements
+    hs.add("jason");
+    
+    //bianli
+    Iterator it = hs.Iterator();
+    while(it.hasNext()){
+      String s = (String)(it.next());
+      Syso(s);
+    }
+    
+    //for Structer
+    for(String s: hs){
+      syso(s);
+    }
+  }
+}
