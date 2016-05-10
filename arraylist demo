@@ -1,0 +1,28 @@
+THIS IS A DEMO FOR PROGRAMMER.
+
+class Demo{
+  public static void main(String[] args){
+    //create collection
+    ArrayList arraylist = new ArrayList();
+    
+    //create class 
+    Student s = new Stduent("jason",27);
+    
+    //add to collection
+    arraylist.add(s);
+    
+    //bianli
+    Interator it = arraylist.interator();
+    while(it.hasNext()){
+      Student s = (Student)(it.next());
+      Syso(s);
+    }
+    
+    //for structor
+      for(Student s : arraylist){
+        syso(s);
+      }
+    
+    
+  }
+}
